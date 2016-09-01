@@ -1,0 +1,30 @@
+01 45 13 IMS Okay, got it. Inverter #2 is on the high side of green. 
+01 45 18 PLC Wait a minute -
+01 45 20 MCC We've got to go to AUTO here. We don't -
+01 45 22 PLC Wait a minute -
+01 45 28 IMS Wait, wait. Let's -
+01 45 44 MCC Frieda, can you read Kei? Kei? We can't hear you. 
+01 46 03 IMS [unreadable] -  floating all over the place -
+01 46 13 MCC We've got some problems. Stand by half a second. 
+01 46 42 MCC You're unreadable, we copied a few words about the insulation but that's all we can copy. 
+01 47 57 MCC Kei, we're still hearing you very weakly, and a lot of background noise. 
+01 48 01 IMS [unreadable] water, water, my suit -
+01 48 13 PLC Are you with me? Are you with me?
+01 48 53 IMS I'm yelling as loud as I can. My helmet -
+01 48 59 PLC Kei. Kei. Can you read? 
+01 49 33 MCC We've got a decision to make here. 
+01 50 07 PLC Mission Control, what are my orders?
+01 50 46 PLC Mission Control, I can't see anything. I need to go out there. I'm getting my suit on.
+01 50 56 MCC Frieda keep trying the radio. 
+01 53 29 IMS [unreadable] water everywhere - 
+01 55 18 MCC Can you read Kei? 
+02 04 12 IMS Frieda? I'm - Ghha oh that's a big fish. 
+02 13 02 IMS I have to get out of this suit. 
+02 19 14 PLC Do you read me? 
+02 20 03 PLC Kei's gone, Kei's gone, I - 
+02 21 10 PLC There's nothing, there's no one there.
+02 31 40 IMS [unreadable] have to take my helmet off -
+02 32 59 IMS - can't swim in this suit - 
+02 34 38 IMS I don't know how much oxygen I have
+02 47 54 PLC Kei? Kei where are you? 
+02 48 06 PLC Kei we've lost you. 

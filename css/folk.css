@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Bootstrap Overrides
+   ========================================================================== */
+
+body {
+  padding-top: 0px;
+}
+
+h3 {
+	margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#folkID {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#multID{
+	display: inline-block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/*
+ * .blah is a selector that looks for any html element with class='blah'
+ * #specific-blah looks for elements with id='specific-blah'
+ * div applies to every div element on the page
+ */
