@@ -110,12 +110,13 @@ img.lwHeader {
    text-align: center;
    background-color: lightblue;
    margin: 10px;
-   border-bottom-width: thick;
+   /*border-bottom-width: thick;
    border-bottom-color: darkgrey;
    border-bottom-style:double;
    border-left-width:thick;
-   border-left-style:ridge;
+   border-left-style:ridge;*/
    padding-top:2px;
+   padding-bottom: 15px;
  }
 
 
@@ -134,17 +135,18 @@ img.lwHeader {
    color: black;
 }
 .blog-title {
-  border-bottom-width: thick;
+  /*border-bottom-width: thick;
   border-bottom-color: darkgrey;
   border-bottom-style:double;
   border-left-width:thick;
-  border-left-style:ridge;
+  border-left-style:ridge;*/
   margin-bottom: 10px;
   background-color: lightgrey;
   width: 100%;
   padding-top:1px;
   padding-left:20px;
   padding-right:20px;
+  padding-bottom:15px;
 }
 .blog-title h2{
   text-align:left;
