@@ -225,6 +225,10 @@ img.lwHeader {
   float: none;
 }
 
+.cv p {
+  font-size: 18px;
+}
+
 .blog-format canvas{
   display: block;
   margin-left: auto;
@@ -254,7 +258,7 @@ img.lwHeader {
 
 .footer p{
   text-align:right;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .table tr{
