@@ -229,6 +229,10 @@ img.lwHeader {
   font-size: 18px;
 }
 
+.cv-content {
+  margin-left: 30px;
+}
+
 .blog-format canvas{
   display: block;
   margin-left: auto;
