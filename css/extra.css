@@ -86,11 +86,11 @@
      font-style:normal;
    }
    .blog-format a:hover{
-     color: darkblue;
+     color: lightblue;
      text-decoration:none;
    }
     .blog-format a:active{
-     color: darkblue;
+     color: lightblue;
      text-decoration:none;
    }
 
@@ -161,6 +161,9 @@ img.lwHeader {
 
  .pagetitle h1 {
    color: white;
+ }
+ .pagetitle p {
+   color: lightgrey;
  }
 
 
