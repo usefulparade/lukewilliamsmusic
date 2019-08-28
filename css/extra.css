@@ -12,7 +12,7 @@
    h1 {
      font-family: 'Josefin Slab', sans-serif;
      font-weight: 300;
-     font-size: 70px;
+     font-size: 50px;
 
    }
 
@@ -169,7 +169,7 @@ img.lwHeader {
 
 .blog-format {
   display:inline;
-  text-align: justify;
+  text-align: left;
 }
 
 .blog-format h3,
@@ -219,6 +219,10 @@ img.lwHeader {
   margin-top: 0px;
 }
 
+.blog-content iframe {
+  margin-bottom: 30px;
+}
+
 .blog-format iframe{
   display: block;
   max-width: 100%;
@@ -226,6 +230,7 @@ img.lwHeader {
   margin-right: auto;
   /*padding-bottom: 20px;*/
   float: none;
+  
 }
 
 .cv p {
