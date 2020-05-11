@@ -50,6 +50,13 @@
      font-size: 20px;
    }
 
+   th.sortable {
+     cursor: pointer;
+   }
+   th.sortable:hover {
+     text-decoration: underline;
+   }
+
    #guardCanvas{
      padding-bottom:140px;
    }
