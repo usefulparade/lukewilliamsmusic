@@ -229,9 +229,15 @@ img.lwHeader {
   padding-bottom:20px;
   margin-bottom: 10px;
   background-color: white;
+  overflow: scroll;
 }
 .blog-content h3{
   margin-top: 0px;
+}
+
+.blog-content .filters{
+  width: 100%;
+  text-align: center;
 }
 
 .blog-content iframe {

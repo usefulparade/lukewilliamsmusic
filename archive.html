@@ -15,11 +15,13 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="js2/p5/p5.min.js"></script>
+  <script src="js2/p5/p5.dom.min.js"></script>
   <script src="js2/archiveswitcher.js"></script>
   <script src="js2/archivePopulate.js"></script>
 </head>
 
-<body onload="sortArchive(1), sortArchive(2), sortArchive(2)">
+<body>
   <!--[if lt IE 7]>
   <p class="chromeframe">You are using an <strong>outdated</strong>
   browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or
@@ -63,310 +65,43 @@
 
           <div class="col-xs-12">
             <div class="row blog-content">
+              <div class="filters">
+                <span>filter by:</span>
+                <button class="btn" onclick="filterTable('all')">all</button>
+                <button class="btn" onclick="filterTable('music')">music</button>
+                <button class="btn" onclick="filterTable('code')">code</button>
+                <button class="btn" onclick="filterTable('solo project')">solo projects</button>
+                <button class="btn" onclick="filterTable('collab')">collaborations</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="row blog-content">
+              
+
               <table id="archiveTable" class="table">
+              
                 <thead>
                   <tr>
                     <th scope="col">project</th>
                     <th scope="col" class="sortable" onclick="sortArchive(1)">type</th>
                     <th scope="col" class="sortable" onclick="sortArchive(2)">year</th>
-                    <th scope="col" class="sortable" onclick="sortArchive(3)">with</th>
-                    <th scope="col" class="sortable" onclick="sortArchive(4)">role</th>
+                    <th scope="col" class="sortable" onclick="sortArchive(3)">role</th>
+                    <th scope="col" class="sortable" onclick="sortArchive(4)">with</th>
+                    
                   </tr>
                 </thead>
-                <tbody>
-                                    <!-- CREATIVE CODE -->
-                  <!-- DOTP MIDI -->
-                  <tr>
-                    <td><a target="_blank" href="https://usefulparade.github.io/dotp-midi">dotp-midi</a></td>
-                    <td>creative code</td>
-                    <td>2020</td>
-                    <td>alex wand<br>desert magic</td>
-                    <td>collab<br> programmer<br>designer</td>
-                  </tr>
-                  <!-- GLS -->
-                  <tr>
-                    <td><a target="_blank" href="https://usefulparade.com/tools/gameoflifesynth">game of life synth</a></td>
-                    <td>creative code</td>
-                    <td>2020</td>
-                    <td>john conway (rip)</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- windchime -->
-                  <tr>
-                    <td><a target="_blank" href="https://usefulparade.com/tools/thewindeastoflakeerie">the wind east of lake erie</a></td>
-                    <td>creative code</td>
-                    <td>2020</td>
-                    <td>NOAA</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- double pendulum synth -->
-                  <tr>
-                    <td><a target="_blank" href="http://www.lukewilliamsmusic.com/pendulosc/">double pendulum synth</a></td>
-                    <td>creative code</td>
-                    <td>2018</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- DOTP app -->
-                  <tr>
-                    <td><a target="_blank" href="https://danceoftheplanets.com">dotp-app</a></td>
-                    <td>creative code</td>
-                    <td>2018</td>
-                    <td>alex wand<br>desert magic</td>
-                    <td>collab<br> programmer<br>designer</td>
-                  </tr>
-                                    <!-- MUSIC -->
-                  <!-- train songs -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/40-songs-for-a-train-ride">40 songs for a train ride</a></td>
-                    <td>music: album</td>
-                    <td>2019-2020</td>
-                    <td>spencer ether</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- moons! -->
-                  <tr>
-                    <td><a target="_blank" href="https://www.youtube.com/playlist?list=PLzKbRT0ic4QlbkRRrDWxbeRzl7HadpPHB">moons</a></td>
-                    <td>music: album</td>
-                    <td>2015-??</td>
-                    <td>logan hone</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- moons! -->
-                  <tr>
-                    <td><a target="_blank" href="https://www.youtube.com/playlist?list=PLzKbRT0ic4QlbkRRrDWxbeRzl7HadpPHB">moons</a></td>
-                    <td>video: collage</td>
-                    <td>2015-??</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- hayfever! -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/hayfever">hayfever!</a></td>
-                    <td>music: ep</td>
-                    <td>2019</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- early sequences -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/early-sequences">early sequences</a></td>
-                    <td>music: ep</td>
-                    <td>2019</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- saltshoesnow -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/saltshoesnow">saltshoesnow</a></td>
-                    <td>music: ep</td>
-                    <td>2019</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- dustbathing substrate -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/dustbathing-substrate">dustbathing substrate</a></td>
-                    <td>music: ep</td>
-                    <td>2018</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- atongue -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/atongue">atongue[</a></td>
-                    <td>music: album</td>
-                    <td>2015-2017</td>
-                    <td>spencer ether<br>logan hone<br>jesse qt</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- there is some space below that -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/there-is-some-space-below-that">there is some space below that</a></td>
-                    <td>music: album</td>
-                    <td>2014</td>
-                    <td>NASA</td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- desert gestalt -->
-                  <tr>
-                    <td><a target="_blank" href="https://luscho.bandcamp.com/album/desert-gestalt">Desert Gestalt</a></td>
-                    <td>music: album</td>
-                    <td>2013</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                  <!-- fair mariner -->
-                  <tr>
-                    <td>Fair Mariner</td>
-                    <td>music: album</td>
-                    <td>2013</td>
-                    <td></td>
-                    <td>solo</td>
-                  </tr>
-                                    <!-- MUSIC COLLABS -->
-                  <!-- june of two place -->
-                  <tr>
-                    <td><a target="_blank" href="https://benswisher.bandcamp.com/album/the-june-of-two-place">The June of Two Place</a></td>
-                    <td>music: album</td>
-                    <td>2020</td>
-                    <td>ben swisher<br>elise cavicchi</td>
-                    <td>collab<br>glaze</td>
-                  </tr>
-                  <!-- a day like this -->
-                  <tr>
-                    <td><a target="_blank" href="https://caristevens.bandcamp.com/album/a-day-like-this">A Day Like This</a></td>
-                    <td>music: ep</td>
-                    <td>2020</td>
-                    <td>cari stevens</td>
-                    <td>collab<br> session musician</td>
-                  </tr>
-                  <!-- feel-good instrumental music! -->
-                  <tr>
-                    <td><a target="_blank" href="https://loganhone.bandcamp.com/album/feel-good-instrumental-music">Feel-Good Instrumental Music!</a></td>
-                    <td>music: album</td>
-                    <td>2020</td>
-                    <td>logan hone</td>
-                    <td>collab<br> session musician<br>glaze</td>
-                  </tr>
-                  <!-- all time forever mixtape -->
-                  <tr>
-                    <td><a target="_blank" href="https://loganhone.bandcamp.com/album/all-time-forever-mixtape-a-collection-of-sing-songs-jazzy-instrumentals-softer-music">All-Time Forever Mixtape</a></td>
-                    <td>music: album</td>
-                    <td>2019</td>
-                    <td>logan hone</td>
-                    <td>collab<br> session musician<br>mix<br>glaze</td>
-                  </tr>
-                  <!-- flowers on loan -->
-                  <tr>
-                    <td><a target="_blank" href="https://loganhone.bandcamp.com/album/flowers-on-loan-music-from-the-2017-west-coast-tour">Flowers On Loan</a></td>
-                    <td>music: album</td>
-                    <td>2020</td>
-                    <td>logan hone<br>jesse qt<br>owen stuart robinson</td>
-                    <td>collab<br> mix<br>glaze</td>
-                  </tr>
-                  <!-- It Lo -->
-                  <tr>
-                    <td><a target="_blank" href="https://loganhone.bandcamp.com/album/it-lo">It Lo</a></td>
-                    <td>music: album</td>
-                    <td>2017</td>
-                    <td>logan hone<br>jason rabb<br>nick foster</td>
-                    <td>collab<br> engineer<br>mix<br>glaze</td>
-                  </tr>
-                  <!-- Variety Show -->
-                  <tr>
-                    <td><a target="_blank" href="https://loganhone.bandcamp.com/album/variety-show">Variety Show</a></td>
-                    <td>music: album</td>
-                    <td>2017</td>
-                    <td>logan hone</td>
-                    <td>collab<br> bandmate<br>glaze</td>
-                  </tr>
-                  <!-- wind sun salt the path -->
-                  <tr>
-                    <td><a target="_blank" href="https://www.youtube.com/watch?time_continue=6&v=A-uYoR_41TQ">Wind, Sun Salt the Path</a></td>
-                    <td>music: album</td>
-                    <td>2018</td>
-                    <td>logan hone<br>buncha folks</td>
-                    <td>collab<br> bandmate</td>
-                  </tr>
-                  <!-- in the universe -->
-                  <tr>
-                    <td><a target="_blank" href="https://desertmagic.bandcamp.com/album/in-the-universe">In The Universe</a></td>
-                    <td>music: album</td>
-                    <td>2018</td>
-                    <td>alex wand<br>desert magic</td>
-                    <td>collab<br> bandmate</td>
-                  </tr>
-                  <!-- boot leguages -->
-                  <tr>
-                    <td><a target="_blank" href="https://senwisher.bandcamp.com/album/boot-leguages">Boot Leguages</a></td>
-                    <td>music: ep</td>
-                    <td>2018</td>
-                    <td>ben swisher<br>jessica li</td>
-                    <td>collab<br> bandmate<br>producer</td>
-                  </tr>
-                  <!-- Picky Bunches 3P -->
-                  <tr>
-                    <td><a target="_blank" href="https://pickybunches.bandcamp.com/album/3p">3P</a></td>
-                    <td>music: ep</td>
-                    <td>2018</td>
-                    <td>picky bunches</td>
-                    <td>collab<br> glaze</td>
-                  </tr>
-                  <!-- Two -->
-                  <tr>
-                    <td><a target="_blank" href="https://dirtyprovo.bandcamp.com/album/two">Two</a></td>
-                    <td>music: album</td>
-                    <td>2015</td>
-                    <td>jesse qt<br>stuart wheeler</td>
-                    <td>collab<br> producer<br>mix<br>glaze</td>
-                  </tr>
-                  <!-- White Bristles -->
-                  <tr>
-                    <td><a target="_blank" href="https://brightwhistles.bandcamp.com/album/white-bristles">White Bristles</a></td>
-                    <td>music: album</td>
-                    <td>2015</td>
-                    <td>logan hone<br>jesse qt</td>
-                    <td>collab<br> bandmate<br>producer</td>
-                  </tr>
-                  <!-- sichuan project -->
-                  <tr>
-                    <td><a target="_blank" href="https://matteo.bandcamp.com/the-sichuan-project">the sichuan project</a></td>
-                    <td>music: ep</td>
-                    <td>2012</td>
-                    <td>matteo</td>
-                    <td>collab<br> bandmate<br>producer</td>
-                  </tr>
-                  <!-- morning market -->
-                  <tr>
-                    <td><a target="_blank" href="https://matteo.bandcamp.com/the-morning-market">the morning market</a></td>
-                    <td>music: album</td>
-                    <td>2011</td>
-                    <td>matteo</td>
-                    <td>collab<br> bandmate<br>producer</td>
-                  </tr>
-                  <!-- julia's album -->
-                  <tr>
-                    <td><a target="_blank" href="https://juliamecham.bandcamp.com/">parts of speech</a></td>
-                    <td>music: album</td>
-                    <td>2011</td>
-                    <td>julia mecham</td>
-                    <td>collab<br> producer</td>
-                  </tr>
-                                    <!-- VIDEOS -->
-                  <!-- desert magic videos -->
-                  <tr>
-                    <td>3 desert magic videos:<br>
-                      <a target="_blank" href="https://www.youtube.com/watch?v=yBObI_UT1xk">1</a>, 
-                      <a target="_blank" href="https://www.youtube.com/watch?v=wOPDPCacvpU">2</a>, and 
-                      <a target="_blank" href="https://www.youtube.com/watch?v=HXxYWnIYUvE">3</a></td>
-                    <td>video: collage</td>
-                    <td>2019</td>
-                    <td>desert magic</td>
-                    <td>editor</td>
-                  </tr>
-                  
-                                    <!-- SCORING -->
-                  <!-- Reply All -->
-                  <tr>
-                    <td>Reply All<br>
-                      Episode 152<br>
-                      parts 
-                      <a target="_blank" href="https://gimletmedia.com/shows/reply-all/llhd33/152-the-real-enemy-part-1">1</a>, 
-                      <a target="_blank" href="https://gimletmedia.com/shows/reply-all/llhd33/152-the-real-enemy-part-2">2</a>, 
-                      and <a target="_blank" href="https://gimletmedia.com/shows/reply-all/llhd33/152-the-real-enemy-part-3">3</a></td>
-                    <td>music: score</td>
-                    <td>2019</td>
-                    <td>Reply All</td>
-                    <td>collab<br> composer, producer</td>
-                  </tr>
+                <tbody id="archiveBody">
+                 
                 </tbody>
               </table>
+              <p id="loadingmsg">loading the archive...</p>
             </div>
           </div>
 
           <!--ONGOING-->
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12">
               <div class='row'>
                 <div class="col-xs-12 blog-title">
                   <h2>Current & Ongoing Stuff</h2>
@@ -389,10 +124,10 @@
                 </div>
                 <p></p>
               </div>
-            </div>
+            </div> -->
 
           <!--2019-->
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12">
               <div class='row'>
                 <div class="col-xs-12 blog-title">
                   <h2>2019</h2>
@@ -414,10 +149,10 @@
                 </div>
                 <p></p>
               </div>
-            </div>
+            </div> -->
 
             <!--2018-->
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12">
             <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>2018</h2>
@@ -447,10 +182,10 @@
               </div>
               <p></p>
             </div>
-          </div>
+          </div> -->
 
               <!--2017-->
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12">
             <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>2017</h2>
@@ -484,10 +219,10 @@
                 
               </div>
               <p></p>
-            </div>
+            </div> -->
 
                 <!--2016-->
-            <div class='row'>
+            <!-- <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>2016</h2>
               </div>
@@ -519,10 +254,10 @@
                 <p> <a target="_blank" href="https://twitter.com/geryon_bot"><b>@geryon_bot</b></a><i> — geryon_bot was a monster everything about him was red</i></p>
                 <p> <b>A Book of Kennings</b><i> — a small, japanese-bound collection that Blair and I made for family & friends</i></p>
               </div>
-            </div>
+            </div> -->
 
             <!--2015-->
-            <div class='row'>
+            <!-- <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>2015</h2>
               </div>
@@ -548,10 +283,10 @@
                 <h4>OTHER</h4>
                 <p> <b>I Heard a Voice</b><i> — the first music/game I ever tried to make. It was a wonderful trainwreck.</i></p>
               </div>
-            </div>
+            </div> -->
 
             <!--2014-->
-            <div class='row'>
+            <!-- <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>2014</h2>
               </div>
@@ -576,10 +311,10 @@
                 <h4>OTHER</h4>
                 <p><i>learned how to make bread</i></p>
               </div>
-            </div>
+            </div> -->
 
             <!--EARLIER-->
-            <div class='row'>
+            <!-- <div class='row'>
               <div class="col-xs-12 blog-title">
                 <h2>EARLIER</h2>
               </div>
@@ -612,7 +347,7 @@
                 <p> <i>lots of physical media — painting, drawing. That was my whole life for a while.</i></p>
                 <p><b>Hunger Games: The Movie: The Game</b> and <b>Hunger Games: The Movie: The Game 2: Catching Fire</b> <i>Two ridiculous games(?) I made in college while trying to learn Unity.</i></p>
               </div>
-            </div>
+            </div> -->
 
           </div>
         <!--BOTTOM STUFF-->
