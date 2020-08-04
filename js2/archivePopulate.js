@@ -3,7 +3,7 @@ var rowsArray = [];
 var c;
 
 function preload(){
-  arch = loadTable('https://docs.google.com/spreadsheets/d/e/2PACX-1vTtXLeDOlgLpGespTc09KIy0WHG2MYFfrd39lFAamgZHBD5DjeBkQayxaQqQfvS1qDODDKeDE02euXJ/pub?output=csv', 'csv', 'header');
+  arch = loadTable('/csv/gsheets-archive.csv', 'csv', 'header');
 }
 
 function setup(){
