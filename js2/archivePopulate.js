@@ -48,7 +48,7 @@ function makeTable(){
       project = createElement('td', rows[i].arr[0]);
     }
 
-    var types = rows[i].arr[2].replace(/\+/g, ',<br>');
+    var types = rows[i].arr[2].replace(/\+/g, '');
     var roles = rows[i].arr[4].replace(/\+/g, ',<br>');
     var collaborators = rows[i].arr[5].replace(/\+/g, ',<br>');
   
@@ -67,8 +67,8 @@ function makeTable(){
     i++;
   }
 
-  var loadingmsg = select('#loadingmsg');
-  loadingmsg.style('display', 'none');
+  // var loadingmsg = select('#loadingmsg');
+  // loadingmsg.style('display', 'none');
   // for (i=0;i<rows.length;i++){
 
   //   var thisRow = createElement('tr', '');
