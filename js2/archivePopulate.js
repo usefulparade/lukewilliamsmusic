@@ -114,33 +114,46 @@ function filterTable(s){
     var role = children[3].innerHTML;
     var type = children[1].innerHTML;
     if (sort == 'all'){
-      rowsArray[i].style('display', 'table-row');
-    } else if (sort == 'solo project'){
-      if (!role.search('solo project')){
-        rowsArray[i].style('display', 'table-row');
+      rowsArray[i].style('display','table-row');
+    } else {
+      if (type[type.search(sort)] != null){
+        rowsArray[i].style('display','table-row');
       } else {
-        rowsArray[i].style('display', 'none');
-      }
-    } else if (sort == 'collab'){
-      if (role.search('solo project')){
-        rowsArray[i].style('display', 'table-row');
-      } else {
-        rowsArray[i].style('display', 'none');
-      }
-    }else if (sort == 'code'){
-      if (!type.search('code')){
-        rowsArray[i].style('display', 'table-row');
-      } else {
-        rowsArray[i].style('display', 'none');
-      }
-    } else if (sort == 'music'){
-      if (!type.search('music')){
-        rowsArray[i].style('display', 'table-row');
-      } else {
-        rowsArray[i].style('display', 'none');
+        rowsArray[i].style('display','none');
       }
     }
   }
+
+
+
+  //   if (sort == 'all'){
+  //     rowsArray[i].style('display', 'table-row');
+  //   } else if (sort == 'solo project'){
+  //     if (!role.search('solo project')){
+  //       rowsArray[i].style('display', 'table-row');
+  //     } else {
+  //       rowsArray[i].style('display', 'none');
+  //     }
+  //   } else if (sort == 'collab'){
+  //     if (role.search('solo project')){
+  //       rowsArray[i].style('display', 'table-row');
+  //     } else {
+  //       rowsArray[i].style('display', 'none');
+  //     }
+  //   }else if (sort == 'code'){
+  //     if (type[type.search('🤖')] != null){
+  //       rowsArray[i].style('display', 'table-row');
+  //     } else {
+  //       rowsArray[i].style('display', 'none');
+  //     }
+  //   } else if (sort == 'music'){
+  //     if (type[type.search('🎵')] != null){
+  //       rowsArray[i].style('display', 'table-row');
+  //     } else {
+  //       rowsArray[i].style('display', 'none');
+  //     }
+  //   }
+  // }
   // console.log(rowsArray[0].child().html());
   
 }

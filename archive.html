@@ -67,11 +67,26 @@
             <div class="row blog-content">
               <div class="filters">
                 <span>filter by:</span>
-                <button class="btn" onclick="filterTable('all')">all</button>
+                
+                <select onchange="filterTable(this.value)" name="filter">
+                  <option value="all">all</option>
+                    <optgroup label="music">
+                  <option value="🎵">🎵 music</option>
+                  <option value="🌕">🌕 album</option>
+                  <option value="🌓">🌓 ep</option>
+                  <option value="🎚️">🎚️ production</option>
+                    <optgroup label="code">
+                  <option value="🤖">🤖 code</option>
+                  <option value="🔗">🔗 web</option>
+                  <option value="🕹️">🕹️ game</option>
+                  <option value="🎛️">🎛️ music tool</option>
+
+                </select>
+                <!-- <button class="btn" onclick="filterTable('all')">all</button>
                 <button class="btn" onclick="filterTable('music')">music</button>
                 <button class="btn" onclick="filterTable('code')">code</button>
                 <button class="btn" onclick="filterTable('solo project')">solo projects</button>
-                <button class="btn" onclick="filterTable('collab')">collaborations</button>
+                <button class="btn" onclick="filterTable('collab')">collaborations</button> -->
               </div>
             </div>
           </div>
