@@ -50,12 +50,19 @@ function makeTable(){
 
     var types = rows[i].arr[2].replace(/\+/g, '');
     var roles = rows[i].arr[4].replace(/\+/g, ',<br>');
-    var collaborators = rows[i].arr[5].replace(/\+/g, ',<br>');
+    var collaborators;
+    if (rows[i].arr[5] != null){
+      collaborators = rows[i].arr[5].replace(/\+/g, ',<br>');
+      
+    } else {
+      collaborators = ""
+    }
   
     var type = createElement('td', types);
     var year = createElement('td', rows[i].arr[3]);
     var role = createElement('td', roles);
     var collab = createElement('td', collaborators);
+    
     
 
     project.parent(thisRow);
