@@ -9,6 +9,11 @@
     src: url('../fonts/pinopolis.otf');
   }
 
+  @font-face {
+    font-family: 'Title';
+    src: url('../fonts/titlefont.otf');
+}
+
    body {
       padding-top: 10px;
       background-image: url('../img/glitchbg-small.jpg');
@@ -69,6 +74,7 @@
 
    .sidenav p{
      font-size: 20px;
+     padding: 5px;
      /* font-family: 'Cutive Mono', serif; */
      /* font-weight: bold; */
      background-color: white;
@@ -210,6 +216,7 @@ img.lwHeader {
   padding-right:20px;
   padding-bottom:15px;
 }
+
 .blog-title h2{
   text-align:left;
 }
@@ -303,4 +310,26 @@ img.lwHeader {
   margin-left: auto;
   margin-right: auto;
   padding-bottom:20px;
+}
+
+
+.rainbow {
+  background-image: linear-gradient(-90deg, #145fbb, #145fbb);
+  /* border: 5px solid #145fbb; */
+  /* background-color: #145fbb; */
+}
+
+a:link .rainbow {
+  color: white;
+}
+
+a:active .rainbow {
+  color: white;
+}
+
+a:visited .rainbow {
+  color: white;
+}
+a:hover .rainbow {
+  color: lightcoral;
 }
