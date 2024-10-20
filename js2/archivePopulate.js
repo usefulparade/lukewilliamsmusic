@@ -3,7 +3,7 @@ var rowsArray = [];
 var c;
 
 function preload(){
-  arch = loadTable('/csv/gsheets-archive.csv', 'csv', 'header');
+  arch = loadTable('/csv/archive.csv', 'csv', 'header');
 }
 
 function setup(){
